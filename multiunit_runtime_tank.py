@@ -9,7 +9,6 @@ from matplotlib import pyplot as plt
 import numpy as np
 from PIL import Image
 import sys
-import step_update
 
 
 class TerranAgent1(base_agent.BaseAgent):
@@ -23,6 +22,7 @@ class TerranAgent1(base_agent.BaseAgent):
     down = "down"
     nop = "nop"
     right = "right"
+    left = "left"
 
 
     # convert the two strings into lists
@@ -62,7 +62,6 @@ class TerranAgent1(base_agent.BaseAgent):
     
     def step(self, obs):
         super(TerranAgent1, self).step(obs)
-        print("****",self.R)
         if(len(self.R) <= self.num_step):
             return actions.RAW_FUNCTIONS.no_op()
         agent_step = self.R[self.num_step]
@@ -87,13 +86,13 @@ class TerranAgent1(base_agent.BaseAgent):
             ycor.append(marine[i].y)
             xcor.append(marine[i].x)
             if(agent_step[i]=="up"):
-                ycor[i]=int(ycor[i])+10
-            if(agent_step[i]=="down"):
                 ycor[i]=int(ycor[i])-10
+            if(agent_step[i]=="down"):
+                ycor[i]=int(ycor[i])+10
             if(agent_step[i]=="left"):
-                xcor[i]=int(xcor[i])+10
+                xcor[i]=int(xcor[i])-10
             if(agent_step[i]=="right"):
-                xcor[i]=int(xcor[i])-10                        
+                xcor[i]=int(xcor[i])+10                        
             unit_actions.append(actions.RAW_FUNCTIONS.Attack_pt("now", unit_tags[i], (xcor[i],ycor[i])))
         return unit_actions    
 
@@ -108,6 +107,7 @@ class TerranAgent2(base_agent.BaseAgent):
     down = "down"
     nop = "nop"
     right = "right"
+    left = "left"
 
 
     # convert the two strings into lists
@@ -150,9 +150,7 @@ class TerranAgent2(base_agent.BaseAgent):
         super(TerranAgent2, self).step(obs)
         if(len(self.B) <= self.num_step):
             return actions.RAW_FUNCTIONS.no_op()
-        print(self.B)
         agent_step = self.B[self.num_step]
-        print("*****",agent_step)
         self.num_step+=1
         marines = self.get_raw_units_by_type(obs, units.Terran.Marine)
         Tanks = self.get_raw_units_by_type(obs, units.Terran.SiegeTank)
@@ -170,8 +168,6 @@ class TerranAgent2(base_agent.BaseAgent):
         marine.append([unit for unit in marines if unit.tag == self.marine_tag3][0])
         marine.append([unit for unit in marines if unit.tag == self.marine_tag4][0])
         marine.append([unit for unit in Tanks if unit.tag == self.tank_tag][0])
-        print(len(self.R))
-        print('**********')
         for i in range(3):     
             ycor.append(marine[i].y)
             xcor.append(marine[i].x)   
@@ -180,12 +176,12 @@ class TerranAgent2(base_agent.BaseAgent):
             if(agent_step[i]=="down"):
                 ycor[i]=int(ycor[i])-10
             if(agent_step[i]=="left"):
-                xcor[i]=int(xcor[i])+10
-            if(agent_step[i]=="right"):
                 xcor[i]=int(xcor[i])-10
+            if(agent_step[i]=="right"):
+                xcor[i]=int(xcor[i])+10
             #result = step_update.my_method(my_list1, my_list2)                       
             unit_actions.append(actions.RAW_FUNCTIONS.Attack_pt("now", unit_tags[i], (xcor[i],ycor[i])))
-        print(unit_actions)    
+
         return unit_actions
 
 
