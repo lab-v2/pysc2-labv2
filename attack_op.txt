@@ -1,0 +1,133 @@
+PS C:\Users\lahar\Downloads\grader\SC2> & C:/Users/lahar/AppData/Local/Programs/Python/Python310/python.exe c:/Users/lahar/Downloads/grader/SC2/interface_nmarine_attack.py
+pygame 2.1.2 (SDL 2.0.18, Python 3.10.6)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+I0510 20:52:09.593445 23704 sc2_env.py:332] Ports used for multiplayer: [55888, 55889, 55890, 55887]
+I0510 20:52:09.604455 23704 sc_process.py:130] Launching SC2: C:\Program Files (x86)\StarCraft II\Versions/Base89634\SC2_x64.exe -listen 127.0.0.1 -port 55891 -dataDir C:\Program Files (x86)\StarCraft II\ -tempDir C:\Users\lahar\AppData\Local\Temp\sc-yw06t_q7\ -displayMode 0 -windowwidth 640 -windowheight 480 -windowx 50 -windowy 50
+I0510 20:52:09.610966 23704 remote_controller.py:162] Connecting to: ws://127.0.0.1:55891/sc2api, attempt: 0, running: True
+I0510 20:52:12.669760 23704 remote_controller.py:162] Connecting to: ws://127.0.0.1:55891/sc2api, attempt: 1, running: True
+I0510 20:52:14.503584 23704 sc_process.py:130] Launching SC2: C:\Program Files (x86)\StarCraft II\Versions/Base89634\SC2_x64.exe -listen 127.0.0.1 -port 55908 -dataDir C:\Program Files (x86)\StarCraft II\ -tempDir C:\Users\lahar\AppData\Local\Temp\sc-n73iaaam\ -displayMode 0 -windowwidth 640 -windowheight 480 -windowx 50 -windowy 50
+I0510 20:52:14.512271 23704 remote_controller.py:162] Connecting to: ws://127.0.0.1:55908/sc2api, attempt: 0, running: True
+I0510 20:52:17.559979 23704 remote_controller.py:162] Connecting to: ws://127.0.0.1:55908/sc2api, attempt: 1, running: True
+I0510 20:52:30.877730 23704 sc2_env.py:288] Environment is ready
+I0510 20:52:30.878268 23704 sc2_env.py:493] Starting episode 1: [terran, terran] on Base_Map_attack
+Please enter a list of directions for team Red: ["up","up","up","up","up","up","up","up","up","up"]
+R: {'unit tag': [4295753729], 'location': [110, 91]}
+R: {'unit tag': [4296540161], 'location': [105, 90]}
+R: {'unit tag': [4297326593], 'location': [103, 91]}
+R: {'unit tag': [4297588737], 'location': [113, 90]}
+R: {'unit tag': [4298375169], 'location': [114, 91]}
+R: {'unit tag': [4298637313], 'location': [113, 91]}
+R: {'unit tag': [4299685889], 'location': [113, 89]}
+R: {'unit tag': [4299948033], 'location': [114, 90]}
+R: {'unit tag': [4298899457], 'location': [111, 91]}
+R: {'unit tag': [4297850881], 'location': [104, 90]}
+Please enter a list of directions for team Blue: ["up","up","up","up","up","up","up","up","up","up"]
+B: {'unit tag': [4294967297], 'location': [28, 11]}
+B: {'unit tag': [4295229441], 'location': [26, 11]}
+B: {'unit tag': [4295491585], 'location': [19, 11]}
+B: {'unit tag': [4295753729], 'location': [110, 91]}
+B: {'unit tag': [4296540161], 'location': [105, 90]}
+B: {'unit tag': [4297326593], 'location': [103, 91]}
+B: {'unit tag': [4297588737], 'location': [113, 90]}
+B: {'unit tag': [4298375169], 'location': [114, 91]}
+B: {'unit tag': [4298637313], 'location': [113, 91]}
+B: {'unit tag': [4299423745], 'location': [25, 10]}
+step num :  1
+Please enter a list of directions for team Red: ["up","up","up","up","up","up","up","up","up","up"]
+R: {'unit tag': [4295753729], 'location': [110, 81]}
+R: {'unit tag': [4296540161], 'location': [105, 80]}
+R: {'unit tag': [4297326593], 'location': [103, 81]}
+R: {'unit tag': [4297588737], 'location': [113, 80]}
+R: {'unit tag': [4298375169], 'location': [114, 81]}
+R: {'unit tag': [4298637313], 'location': [113, 81]}
+R: {'unit tag': [4299685889], 'location': [112, 76]}
+R: {'unit tag': [4299948033], 'location': [114, 80]}
+R: {'unit tag': [4298899457], 'location': [111, 81]}
+R: {'unit tag': [4297850881], 'location': [104, 90]}
+Please enter a list of directions for team Blue: ["up","up","up","up","up","up","up","up","up","up"]
+B: {'unit tag': [4294967297], 'location': [28, 10]}
+B: {'unit tag': [4295229441], 'location': [26, 10]}
+B: {'unit tag': [4295491585], 'location': [19, 10]}
+B: {'unit tag': [4295753729], 'location': [110, 81]}
+B: {'unit tag': [4296540161], 'location': [105, 80]}
+B: {'unit tag': [4297326593], 'location': [103, 81]}
+B: {'unit tag': [4297588737], 'location': [113, 80]}
+B: {'unit tag': [4298375169], 'location': [114, 81]}
+B: {'unit tag': [4298637313], 'location': [113, 81]}
+B: {'unit tag': [4299423745], 'location': [25, 10]}
+step num :  2
+Please enter a list of directions for team Red: ["up","up","up","up","up","up","up","up","up","up"]
+R: {'unit tag': [4295753729], 'location': [110, 71]}
+R: {'unit tag': [4296540161], 'location': [105, 70]}
+R: {'unit tag': [4297326593], 'location': [103, 71]}
+R: {'unit tag': [4297588737], 'location': [113, 70]}
+R: {'unit tag': [4298375169], 'location': [114, 71]}
+R: {'unit tag': [4298637313], 'location': [113, 71]}
+R: {'unit tag': [4299685889], 'location': [111, 63]}
+R: {'unit tag': [4299948033], 'location': [114, 70]}
+R: {'unit tag': [4298899457], 'location': [111, 71]}
+R: {'unit tag': [4297850881], 'location': [104, 90]}
+Please enter a list of directions for team Blue: ["up","up","up","up","up","up","up","up","up","up"]
+B: {'unit tag': [4294967297], 'location': [28, 10]}
+B: {'unit tag': [4295229441], 'location': [26, 10]}
+B: {'unit tag': [4295491585], 'location': [19, 10]}
+B: {'unit tag': [4295753729], 'location': [110, 71]}
+B: {'unit tag': [4296540161], 'location': [105, 70]}
+B: {'unit tag': [4297326593], 'location': [103, 71]}
+B: {'unit tag': [4297588737], 'location': [113, 70]}
+B: {'unit tag': [4298375169], 'location': [114, 71]}
+B: {'unit tag': [4298637313], 'location': [113, 71]}
+B: {'unit tag': [4299423745], 'location': [25, 10]}
+step num :  3
+Please enter a list of directions for team Red: ["up","up","up","up","up","up","up","up","up","up"]
+R: {'unit tag': [4295753729], 'location': [110, 61]}
+R: {'unit tag': [4296540161], 'location': [105, 60]}
+R: {'unit tag': [4297326593], 'location': [103, 61]}
+R: {'unit tag': [4297588737], 'location': [113, 60]}
+R: {'unit tag': [4298375169], 'location': [114, 61]}
+R: {'unit tag': [4298637313], 'location': [113, 61]}
+R: {'unit tag': [4299685889], 'location': [111, 53]}
+R: {'unit tag': [4299948033], 'location': [114, 60]}
+R: {'unit tag': [4298899457], 'location': [111, 61]}
+R: {'unit tag': [4297850881], 'location': [104, 90]}
+Please enter a list of directions for team Blue: ["up","up","up","up","up","up","up","up","up","up"]
+B: {'unit tag': [4294967297], 'location': [28, 10]}
+B: {'unit tag': [4295229441], 'location': [26, 10]}
+B: {'unit tag': [4295491585], 'location': [19, 10]}
+B: {'unit tag': [4295753729], 'location': [110, 61]}
+B: {'unit tag': [4296540161], 'location': [105, 60]}
+B: {'unit tag': [4297326593], 'location': [103, 61]}
+B: {'unit tag': [4297588737], 'location': [113, 60]}
+B: {'unit tag': [4298375169], 'location': [114, 61]}
+B: {'unit tag': [4298637313], 'location': [113, 61]}
+B: {'unit tag': [4299423745], 'location': [25, 10]}
+step num :  4
+Please enter a list of directions for team Red: ["up","up","up","up","up","up","up","up","up","up"]
+R: {'unit tag': [4295753729], 'location': [110, 51]}
+R: {'unit tag': [4296540161], 'location': [105, 50]}
+R: {'unit tag': [4297326593], 'location': [103, 51]}
+R: {'unit tag': [4297588737], 'location': [113, 50]}
+R: {'unit tag': [4298375169], 'location': [114, 51]}
+R: {'unit tag': [4299685889], 'location': [111, 43]}
+R: {'unit tag': [4299948033], 'location': [114, 50]}
+R: {'unit tag': [4298899457], 'location': [111, 51]}
+R: {'unit tag': [4297850881], 'location': [104, 90]}
+Please enter a list of directions for team Blue: ["up","up","up","up","up","up","up","up","up","up"]
+B: {'unit tag': [4294967297], 'location': [28, 10]}
+B: {'unit tag': [4295229441], 'location': [26, 10]}
+B: {'unit tag': [4295491585], 'location': [19, 10]}
+B: {'unit tag': [4295753729], 'location': [110, 51]}
+B: {'unit tag': [4296540161], 'location': [105, 50]}
+B: {'unit tag': [4297326593], 'location': [103, 51]}
+B: {'unit tag': [4297588737], 'location': [113, 50]}
+B: {'unit tag': [4298375169], 'location': [114, 51]}
+B: {'unit tag': [4298637313], 'location': [113, 51]}
+B: {'unit tag': [4299423745], 'location': [25, 10]}
+step num :  5
+Program used: 37.626109 MB of memory
+I0510 20:52:56.522136 23704 sc2_env.py:740] Environment Close
+I0510 20:52:56.680393 23704 sc_process.py:227] Shutdown gracefully.
+I0510 20:52:56.681361 23704 sc_process.py:205] Shutdown with return code: 1
+I0510 20:52:56.785316 23704 sc_process.py:227] Shutdown gracefully.
+I0510 20:52:56.785823 23704 sc_process.py:205] Shutdown with return code: 1
+I0510 20:52:56.877916 23704 sc2_env.py:740] Environment Close
