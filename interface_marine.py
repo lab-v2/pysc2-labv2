@@ -125,7 +125,8 @@ def main(unused_argv):
     observ.printloc()
     winner_blue_cnt = 0
     winner_red_cnt = 0
-    print("Starting 5 Run experiment")
+    episodes = 10
+    print("Starting" + str(episodes) +" Run experiment")
     try:
         with sc2_env.SC2Env(
             map_name ="Base_Map_no_attack",
@@ -149,7 +150,7 @@ def main(unused_argv):
             agent2.setup(env.observation_spec(), env.action_spec())
             with open(file1Name, 'a') as ff:
                 ff.write("Trials with Visualization + Prints + Rewards" + '\n')
-            for tt in range(10):
+            for tt in range(episodes):
                 start = time.time()
                 timesteps = env.reset()
                 agent1.reset()
