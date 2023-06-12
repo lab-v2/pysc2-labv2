@@ -1,5 +1,5 @@
 # pysc2-labv2
-Our implementation of PySC2
+Our implementation of PySC2 on Windows.
 
 ## Structure
 `pr-qtable.npy` is the qlearning based learnt policy file using PyReason. It can be used to play the game.
