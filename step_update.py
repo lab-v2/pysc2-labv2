@@ -8,7 +8,7 @@ import pickle
 import time
 
 ## Read Learned Policy as a Q table from pkl file
-with open('non-pr-qtable-15000.npy', 'rb') as fp:
+with open('pr-qtable.npy', 'rb') as fp:
     q_table = np.load(fp)
 
 ## A simple Wrapper for interfacing with PySC2 as a grid world
@@ -16,9 +16,11 @@ with open('non-pr-qtable-15000.npy', 'rb') as fp:
 
 directions = ['up', 'down', 'left', 'right']
 
+## Game setup
 red_base = (7,0)
 blue_base = (0,7)
 mountains = [(2,3), (3,3), (2,4), (3,4), (4,4), (4,5)]
+## Grid size
 size = 8
 
 
@@ -41,7 +43,7 @@ def validMove(pos, dir):
         return False
     return True
 
-
+## method for Blue agent
 def my_methodB(num_step, unit_tags, marine, xcor, ycor):
     ## Opponent Blue agent moves with a stochastic greedy policy based on
     ## its current manhattan distance from red base
@@ -106,7 +108,7 @@ def my_methodB(num_step, unit_tags, marine, xcor, ycor):
         reward = -100   
     return unit_actions, blue_pos, done, reward
 
-
+## method for red agent
 def my_methodR(num_step, unit_tags, marine, xcor, ycor, blue_pos):
     ## Move Red agent based on the learned policy by consulting the Q table 
     unit_actions = []
