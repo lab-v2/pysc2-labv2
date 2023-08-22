@@ -12,7 +12,6 @@ pth_file_paths = []
 # Loop through all files in the directory
 for filename in sorted(os.listdir(directory_path)):
     # Check if the file has a .pth extension
-    c+=1
     if filename.endswith(".pth"):
         # Create the full path to the file
         file_path = os.path.join(directory_path, filename)
