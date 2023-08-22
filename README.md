@@ -5,6 +5,8 @@ Our implementation of PySC2
 
 PySC2 is a learning environment of StarCraft II. It provides a way to interact with StarCraft II by getting observations and taking actions. For Installation follow [PySC2 - StarCraft II Learning Environment](https://github.com/deepmind/pysc2)
 
+After Installation Place the .SC2 files into /Applications/StarCraft II/Maps -sometimes the Map folder might not exist. If so, please create it
+
 ## Only marine movement:
 **Map**:
 
