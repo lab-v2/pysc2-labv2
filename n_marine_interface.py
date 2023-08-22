@@ -17,6 +17,8 @@ import torch
 file1Name = 'C:/Users/lahar/Downloads/experiment/Policy5stats.txt' #path to file with wins for each game
 file2Name = 'C:/Users/lahar/Downloads/experiment/Policy5wins.txt' #path to file with all the details for each policy
 
+map_name = "Base_Map_no_attack"
+
 num_agents=5
 # directions a marine can take
 directions = ['up', 'down', 'left', 'right', 'nop']
@@ -193,7 +195,7 @@ def main(unused_argv):
     print("Starting" + str(episodes) +" Run experiment")
     try:
         with sc2_env.SC2Env(
-            map_name ="Base_Map_no_attack",
+            map_name = map_name,
             players=[sc2_env.Agent(sc2_env.Race.terran),
                      sc2_env.Agent(sc2_env.Race.terran)],
             agent_interface_format = features.AgentInterfaceFormat(
