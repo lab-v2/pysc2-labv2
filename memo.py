@@ -1,39 +1,23 @@
-import subprocess
-import atexit
 import os
-import time
-filename = "multiunit_runtime_tank.py"
+import subprocess
 
-# specify the command line arguments
-arg1 = "[[left,up,left],[left,up,left]]"
-arg2 = "[[up,nop,up],[up,nop,up]]"
-from memory_profiler import memory_usage
+# file name to run
+progfilename = "n_marine_interface.py"
 
-# Run the Python file using the mprof command-line tool
-# start_time = time.time()
-process = subprocess.Popen(["python", filename, arg1, arg2])
-# end_time = time.time()
-# total_time = end_time - start_time
-# Register a function to print the memory usage results
-pid = os.getpid()
+# Specify the path to the directory
+directory_path = r"C:/Users/lahar/Downloads/success_multi_move_5/success_multi_move_5"
 
-# Register a function to print the memory usage results
-def print_memory_usage():
-    try:
-        mem_usage = memory_usage(pid)
-        #print("Total time taken:", total_time, "seconds")
-        print(f"Memory usage: {mem_usage[-1]} MiB")
-
-        elapsed_time = time.time() - start_time
-        print(f"Elapsed time: {elapsed_time:.2f} seconds")
-    except ProcessLookupError:
-        print("Error: Process ID not found")
-
-atexit.register(print_memory_usage)
-start_time = time.time()
-# Wait for the process to finish
-try:
-    process.wait()
-except KeyboardInterrupt:
-    process.kill()
-    process.wait()
+# Initialize an empty list to store the paths of .pth files
+pth_file_paths = []
+# Loop through all files in the directory
+for filename in sorted(os.listdir(directory_path)):
+    # Check if the file has a .pth extension
+    c+=1
+    if filename.endswith(".pth"):
+        # Create the full path to the file
+        file_path = os.path.join(directory_path, filename)
+        modified_file_path = file_path.rsplit("\\", 1)[0] + "/" + filename
+        try:
+            subprocess.run(["python", progfilename, modified_file_path, filename], check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Error running program with path {e}")
