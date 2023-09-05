@@ -1,12 +1,21 @@
 # pysc2-labv2
 Our implementation of PySC2
 
+## Table of Contents
+
+1. [Environment](#env)
+2. [Marine Movement](#marine)
+3. [Tank and MArine Movement](#marine-tank)
+4. [Contact](#contact)
+
+<a name="env"></a>
 ## Environment:
 
 PySC2 is a learning environment of StarCraft II. It provides a way to interact with StarCraft II by getting observations and taking actions. For Installation follow [PySC2 - StarCraft II Learning Environment](https://github.com/deepmind/pysc2)
 
 After Installation Place the .SC2 files into /Applications/StarCraft II/Maps -sometimes the Map folder might not exist. If so, please create it
 
+<a name="marine"></a>
 ## Only marine movement:
 **Map**:
 
@@ -19,6 +28,7 @@ The map "Base_Map_no_attack.SC2Map" features a landscape with mountains, a red b
 * interface_step_update.py : This file has two important parts, blue team movement is random and all the marines are assigned a directions randomly. On the other hand, the red movement takes the marine tags from "n_marine_interface.py" and calculates the next step a marine should take based on the location of the enemies and creates an action with new location of the active marine. Rewards are also calculated accordingly and returned along with the actions.
 * memo.py : The file is used to run the program with multiple policies mentioned in the zip files.
 
+<a name="marine-tank"></a>
 ## marine + tank movement:
 
 **Map**:
@@ -29,5 +39,9 @@ The map "Base_Map.SC2Map" features a landscape with mountains, a red base, and a
 
 multiunit_runtime_tank.py : This file serves the purpose of directing the movements of marines and tanks based on user-provided actions. It represents a fundamental implementation approach.
 
+<a name="contact"></a>
+## Contact:
 
+* Lahari Pokala - [lpokala@asu.edu](mailto:lpokala@asu.edu?)
+* Kaustuv Mukherji - [kmukher2@asu.edu](mailto:kmukher2@asu.edu?)
 
