@@ -1,11 +1,11 @@
 # pysc2-labv2
-Our implementation of PySC2
+Our implementation of [PySC2](https://github.com/deepmind/pysc2)
 
 ## Table of Contents
 
 1. [Environment](#env)
 2. [Marine Movement](#marine)
-3. [Tank and MArine Movement](#marine-tank)
+3. [Tank and Marine Movement](#marine-tank)
 4. [Contact](#contact)
 
 <a name="env"></a>
